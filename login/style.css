@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --text-color: #fff;
+  --main-color: #0ef;
+}
+
+body {
+  color: var(--text-color);
+}
+
+section {
+  min-height: 100vh;
+  padding: 5rem 5% 2rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 9%;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-color);
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .active {
+  display: inline;
+}
+.navbar a {
+  color: var(--text-color);
+  gap: 20rem;
+  font-size: 1rem;
+  transition: 0, 3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: var(--main-color);
+}
+section .home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home h3 {
+  padding: 0;
+}
+
+.home {
+  background-color: var(--second-bg-color);
+}
+
+.home-img {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px;
+  gap: 20px;
+}
+
+.home-img img {
+  width: 50vh;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--bg-color);
+}
+.heading {
+  display: block;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  color: var(--main-color);
+}
+
+.vismis {
+  background-color: var(--bg-color);
+}
+
+.vismis-img {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.vismis-img img {
+  padding: 30px;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--bg-color);
+}
+
+.sejarah {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--second-bg-color);
+}
+
+.sejarah img {
+  margin-top: 30px;
+  border-radius: 2rem;
+}
+
+.wilayah {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+}
+
+.batas-wilayah {
+  text-align: center;
+  margin-right: 1rem;
+  color: var(--main-color);
+}
+
+.wilayah img {
+  border-radius: 2rem;
+  width: 20rem;
+}
+
+.kegiatan {
+  background-color: var(--second-bg-color);
+}
+.kegiatan h3 {
+  margin-bottom: 4rem;
+}
+
+.kegiatan-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+.kegiatan-container .kegiatan-box {
+  display: flex;
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--bg-color);
+  overflow: hidden;
+}
+
+.kegiatan-box img {
+  width: 100vh;
+  transition: 0.5s ease;
+}
+
+.kegiatan-box:hover img {
+  transform: scale(1, 1);
+}
+
+.kegiatan-box .kegiatan-layer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 4rem;
+  transform: translateY(100%);
+  transition: 0.5s ease;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+}
+
+.kegiatan-box:hover .kegiatan-layer {
+  transform: translateY(0);
+}
+
+.kegiatan-layer h4 {
+  font-size: 3rem;
+}
+
+.kegiatan-layer p {
+  font-size: 1.2rem;
+  margin: 0.3rem 0 1rem;
+}
+
+.back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.back .active {
+  display: inline;
+}
+
+.back a {
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.back a:hover,
+.navbar a.active {
+  color: var(--main-color);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+  background: var(--second-bg-color);
+}
+
+.footer-text p {
+  font-size: 1rem;
+  color: var(--main-color);
+  padding: 20px;
+}

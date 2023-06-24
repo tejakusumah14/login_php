@@ -28,23 +28,56 @@ if (!isset($_SESSION["username"])) {
       margin:auto;
       height:100vh
     }
-    a{
-      /* margin:auto; */
-      font-size:20px;
-      text-decoration:none;
+    section{
+      height: 100vh;
+    }
+    .logout-btn{
+      font-size:25px;
+      font-weight: bold;
+      text-decoration: none;
+      color: black;
+    }
+    section {
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      gap: 23px;
     }
     p{
       font-size:14px;
       margin-top:300px;
       text-align:center;
     }
+
+    button{
+      background-color: #0ef;
+      border-radius: 30px;
+      height: 5vh;
+      margin-top: 3rem;
+    }
+    .footer{
+      display:flex;
+      flex-direction: column;
+      
+    }
   </style>
 
   <title>Hi, <?php echo $_SESSION["username"] ?>!</title>
 </head>
 <body>
-  <h1>Horeee... <?php echo $_SESSION["username"] ?> , your login access is successful.</h1>
-  <a href="logout.php">Logout</a>
-  <p>Copyright &copy; 2023 by TejaKusumah | All Rights Reserved</p>
+  <section>
+    <div class="text-content">
+      <h1>Horeee... <?php echo $_SESSION["username"] ?> , your login access is successful.</h1>
+      <h3> Masuk Ke Halaman <a class="masukWeb" href="portfolio.html"> WEB DESA CIAPUS</a> </h3>
+    </div>
+  </section>
+
+  <section class="footer">
+    <button >
+      <a class="logout-btn" href="logout.php">Logout</a>
+    </button>
+      <p>Copyright &copy; 2023 by TejaKusumah | All Rights Reserved</p>
+  </section>
 </body>
 </html>
